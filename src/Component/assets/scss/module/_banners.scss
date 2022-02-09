@@ -1,0 +1,147 @@
+/*-----------------------
+    banner
+------------------------*/
+.banner-1 {
+    .heading__desc {
+        color: $color-gray;
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 600;
+    }
+
+    .fancybox-item {
+        margin-bottom: 40px;
+    }
+
+    .cta__banner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.banner-2 {
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        z-index: -1;
+        background-color: $color-white;
+    }
+
+    .testimonials {
+        margin-bottom: 40px;
+    }
+}
+
+.banner-3 {
+    .inner-padding {
+        padding: 110px 50px;
+    }
+
+    .heading__title {
+        margin-bottom: 21px;
+    }
+
+    .heading__desc {
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .banner__features-box {
+        background-color: $color-white;
+        padding: 60px 40px;
+        width: 100%;
+        max-width: 370px;
+
+        .banner__features-box-icon {
+            line-height: 1;
+            margin-bottom: 25px;
+
+            i {
+                font-size: 60px;
+                line-height: 1;
+                color: $color-theme;
+            }
+        }
+
+        .banner__features-box-title {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.banner-4 {
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        z-index: -1;
+        background-color: $color-white;
+    }
+}
+
+/* Extra Large Size Screens */
+@media only screen and (min-width:1500px) {
+    .banner .inner-padding {
+        padding-right: 110px;
+        padding-left: 110px;
+    }
+
+    .banner-1 .heading__title {
+        font-size: 42px;
+    }
+
+    .banner-3 .inner-padding {
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+
+    .banner-2,
+    .banner-4 {
+        &:after {
+            display: none;
+        }
+
+        .contact__form-panel {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .banner-1 .banner__cta {
+        padding: 20px;
+    }
+
+    .banner-2,
+    .banner-4 {
+        &:after {
+            display: none;
+        }
+
+        .contact__form-panel {
+            margin-bottom: 30px;
+        }
+    }
+
+    .banner-3 .heading__desc {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+}

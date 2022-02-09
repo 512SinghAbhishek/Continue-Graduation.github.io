@@ -1,0 +1,35 @@
+/*-------------------------
+    Call to Action
+--------------------------*/
+
+.cta__banner {
+    background-color: $color-theme;
+    max-width: 400px;
+    padding: 50px;
+    border-top-right-radius: 3px;
+
+    .cta__title {
+        color: $color-white;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .cta__desc {
+        color: $color-gray;
+        margin-bottom: 25px;
+    }
+
+    .btn:hover {
+        color: $color-heading;
+    }
+
+    .cta__icon {
+        line-height: 1;
+
+        i {
+            font-size: 50px;
+            line-height: 1;
+            color: $color-white;
+        }
+    }
+}

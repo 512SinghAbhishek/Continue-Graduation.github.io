@@ -1,0 +1,115 @@
+/*-------------------------
+   Background & Colors
+--------------------------*/
+
+/* Colors */
+
+.color-white {
+    color: $color-white !important;
+}
+
+.color-gray {
+    color: $color-gray !important;
+}
+
+.color-dark {
+    color: $color-dark !important;
+}
+
+.color-theme {
+    color: $color-theme !important;
+}
+
+.color-heading {
+    color: $color-heading !important;
+}
+
+.color-body {
+    color: $color-body !important;
+}
+
+/* backgrounds */
+
+.bg-white {
+    background-color: $color-white !important;
+}
+
+.bg-gray {
+    background-color: $color-gray !important;
+}
+
+.bg-dark {
+    background-color: $color-dark !important;
+}
+
+.bg-heading {
+    background-color: $color-heading !important;
+}
+
+.bg-theme {
+    background-color: $color-theme !important;
+}
+
+.bg-img {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+.bg-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(#1b1a1a, 15%);
+}
+
+.bg-overlay-2:before {
+    background-color: rgba(#1b1a1a, 5%);
+}
+
+.bg-overlay-3:before {
+    background-color: rgba(#1b1a1a, 35%);
+}
+
+.bg-overlay-4:before {
+    background-color: rgba(#1b1a1a, 75%);
+}
+
+.bg-overlay-theme:before {
+    background-color: rgba($color-theme, 97%);
+}
+
+.bg-overlay-theme-2:before {
+    background-color: rgba($color-theme, 85%);
+}
+
+.bg-overlay-gradient:before {
+    background-color: transparent;
+    background: -webkit-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(27, 26, 26, 0) 0%, rgb(27, 26, 26) 85%);
+    background: -moz-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(27, 26, 26, 0) 0%, rgb(27, 26, 26) 85%);
+    background: -ms-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(27, 26, 26, 0) 0%, rgb(27, 26, 26) 85%);
+}
+
+.bg-overlay-gradient-2:before {
+    background-color: rgba($color-heading, 55%);
+    background-color: $color-heading;
+    opacity: .55;
+    background-image: -moz-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(4, 17, 39, 0) 0%, rgb(4, 17, 39) 65%);
+    background-image: -webkit-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(4, 17, 39, 0) 0%, rgb(4, 17, 39) 65%);
+    background-image: -ms-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(4, 17, 39, 0) 0%, rgb(4, 17, 39) 65%);
+}
+
+.bg-overlay-gradient-theme:before {
+    background-image: -webkit-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(255, 94, 20, 0) 0%, rgb(255, 94, 20) 65%);
+    background-image: -moz-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(255, 94, 20, 0) 0%, rgb(255, 94, 20) 65%);
+    background-image: -ms-linear-gradient(-90deg, rgba(27, 26, 26, 0) 0%, rgba(255, 94, 20, 0) 0%, rgb(255, 94, 20) 65%);
+}

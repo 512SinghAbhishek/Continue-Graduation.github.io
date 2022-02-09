@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #Client
+\*------------------------------------*/
+
+.clients {
+	padding-top: 53px;
+	padding-bottom: 53px;
+
+	.client {
+		position: relative;
+		text-align: center;
+
+		img {
+			display: inline-block;
+			width: auto !important;
+			max-width: 100%;
+		}
+	}
+}
+
+/* Medium Size Screens */
+@include md-screens {
+	.clients {
+		padding: 40px 0;
+	}
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+	.clients {
+		padding: 30px 0;
+	}
+}

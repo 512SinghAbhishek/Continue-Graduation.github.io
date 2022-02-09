@@ -1,0 +1,127 @@
+/*----------------------
+    About
+-----------------------*/
+.about {
+    .counter-item {
+        margin-bottom: 40px;
+    }
+}
+
+.about__text {
+    p:first-of-type {
+        color: #0e2b5c;
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 700;
+        margin-bottom: 26px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 23px;
+    }
+}
+
+.about-layout1 {
+    .about__img {
+        position: relative;
+        padding-left: 30px;
+        margin-left: 20px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -30px;
+            width: 40px;
+            height: 128px;
+            z-index: -1;
+            border-top-right-radius: 3px;
+            background-color: $color-theme;
+        }
+    }
+
+    .cta__banner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 300px;
+        padding: 38px 40px;
+        border-radius: 3px 3px 0 3px;
+
+        .cta__title {
+            font-family: $font-body;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+            margin-bottom: 0;
+        }
+
+        .cta__icon {
+            margin-right: 20px;
+        }
+    }
+}
+
+.about-layout2 {
+    .about__img {
+        position: relative;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        margin-right: 20px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            z-index: -1;
+            background-color: $color-theme;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 150px;
+            width: 30px;
+            height: 60px;
+            z-index: 2;
+            background-color: $color-theme;
+            border-radius: 2px 2px 0 0;
+        }
+    }
+
+    .cta__banner {
+        position: absolute;
+        bottom: 150px;
+        right: 0;
+        width: 100%;
+        max-width: 330px;
+        padding: 40px;
+
+        .cta__title {
+            font-family: $font-body;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 26px;
+            margin-bottom: 13px;
+        }
+
+        .cta__icon {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .about .about__img {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}

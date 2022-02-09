@@ -1,0 +1,217 @@
+/*----------------------------
+    Contact
+----------------------------*/
+.contact__form-panel {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.15);
+
+    .contact__form-panel-header {
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 30px;
+            margin-bottom: 17px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+.contact-panel {
+    .contact__panel-title {
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 21px;
+    }
+
+    .contact__panel-list li {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 4px;
+
+        i {
+            width: 20px;
+            color: $color-theme;
+        }
+    }
+
+    .contact__panel-list-2 li {
+        line-height: 29px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.contact-panel-2 {
+    padding-bottom: 0 !important;
+
+    .contact__panel-header {
+        background-color: $color-theme;
+        color: $color-white;
+        padding: 27px 30px;
+        border-bottom: 0;
+        margin-bottom: 0 !important;
+
+        .contact__panel-title {
+            color: $color-white;
+        }
+
+        i {
+            font-size: 40px;
+            margin-right: 5px;
+        }
+    }
+
+    .accordion-item {
+        padding: 0;
+
+        .accordion__item-header {
+            padding: 22px 30px;
+        }
+
+        .accordion__item-title {
+            font-family: $font-body;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .accordion__item-body {
+            padding: 27px 30px;
+            border-top: 1px solid #eaeaea;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+.contact-chip {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    .contact__chip-img {
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        padding: 2px;
+        border: 2px solid $color-theme;
+        margin-right: 17px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    h6 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+}
+
+.contact-info {
+    margin-top: -60px;
+    border-bottom: 2px solid #e7ebef;
+}
+
+.contact__info-box {
+    padding: 10px 20px;
+    border: 2px solid #e7ebef;
+    border-radius: 3px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+
+    .contact__info-box-icon {
+        color: $color-theme;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .contact__info-box-text {
+        span {
+            font-size: 13px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        a,
+        strong {
+            font-size: 14px;
+            color: $color-body;
+        }
+
+        a:hover {
+            color: $color-theme;
+        }
+    }
+}
+
+.contact .contact__form-panel {
+    margin-top: -200px;
+}
+
+@media only screen and (max-width:992px) {
+    .contact__form-panel {
+        padding: 40px;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .contact .contact-panel {
+        margin-right: 0;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .contact__form-panel {
+        padding: 20px;
+    }
+
+    .contact .contact-panel {
+        margin-right: 0;
+    }
+
+    .contact-panel .contact__panel-header {
+        padding: 20px 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-panel {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contact-info {
+        margin-top: 0;
+    }
+}
