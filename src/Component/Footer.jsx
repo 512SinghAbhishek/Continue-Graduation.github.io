@@ -21,11 +21,10 @@ function Footer() {
                             <div className="col-sm-12 col-md-12 col-lg-3 footer__widget footer__widget-about mb-30">
                                 <div className="footer__widget-content">
                                     <img src={logo} alt="logo" style={img} />
-                                    <p>We produce positive results from ever growing Industrial & manufacturing, we have established a
-                                        corporate mandate to maintain strong core values.</p>
+                                    <p>We produce positive results from ever growing Under graduation Cources Best College & Branch etc..</p>
                                     <a href="mailto:rkgupta@gmmarc.com " className="btn btn__primary btn__link btn__hover2">
                                         <i className="icon-arrow-right arrow-rounded"></i>
-                                        <span>Request A Quote</span>
+                                        <span>Request A Quary</span>
                                     </a>
                                 </div>
                             </div>
@@ -33,10 +32,10 @@ function Footer() {
                                 <h6 className="footer__widget-title">Quick Contact</h6>
                                 <div className="footer__widget-content">
                                     <p>If you have any questions or need help, feel free to contact with our team.</p>
-                                    <a href="tel:01142504577" className="phone-link">
+                                    {/* <a href="tel:01142504577" className="phone-link">
                                         <i className="icon-phone"></i><span>(011) 42504577</span>
                                     </a>
-                                    <p>Regd. Office: 813 Modi Tower, 98, Nehru Place, New Delhi-110019 (INDIA)</p>
+                                    <p>Regd. Office: 813 Modi Tower, 98, Nehru Place, New Delhi-110019 (INDIA)</p> */}
                                     {/* <!-- <ul className="social__icons list-unstyled mt-30 mb-30">
       <li><a href="#"><i className="fa fa-facebook"></i></a></li>
       <li><a href="#"><i className="fa fa-twitter"></i></a></li>
@@ -45,7 +44,7 @@ function Footer() {
                                 </div>
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-2 footer__widget footer__widget-nav">
-                                <h6 className="footer__widget-title">Company</h6>
+                                <h6 className="footer__widget-title">Graduation</h6>
                                 <div className="footer__widget-content">
                                     <nav>
                                         <ul className="list-unstyled">
@@ -54,14 +53,14 @@ function Footer() {
         <li><a href="#">News & Media</a></li>
         <li><a href="#">Case Studies</a></li> --> */}
                                             <li><a href="#">Contacts</a></li>
-                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Quary</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div className="col-12 col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-newsletter">
                                 <div className="footer__widget-content">
-                                    <p>Sign up for industry alerts, our latest news, thoughts, and insights from Modi Group. You may
+                                    <p>Sign up for Notification alerts, our latest news, thoughts, and insights from Start_graduation. You may
                                         withdraw
                                         your consent at any time!</p>
                                     <form className="widget__newsletter-form">
@@ -95,7 +94,7 @@ function Footer() {
                                         </div>
                                         <div className="footer__contact-item-text">
                                             <span>Call Us:</span>
-                                            <strong><a href="tel:00123968574">(002) 123968574</a></strong>
+                                            <strong><a href="tel:00123968574">9984261451</a></strong>
                                         </div>
                                     </div>
                                     <div className="footer__contact-item">
@@ -104,7 +103,7 @@ function Footer() {
                                         </div>
                                         <div className="footer__contact-item-text">
                                             <span>Email Us:</span>
-                                            <strong><a href="mailto:info@umeshmodigroup.com">info@umeshmodigroup.com</a></strong>
+                                            <strong><a href="mailto:info@umeshmodigroup.com">StartGraduation11@gmail.com</a></strong>
                                         </div>
                                     </div>
                                     <div className="footer__contact-item">
@@ -112,17 +111,17 @@ function Footer() {
                                             <i className="icon-clock"></i>
                                         </div>
                                         <div className="footer__contact-item-text">
-                                            <span>Opening Hours:</span>
-                                            <strong>Mon-Fri: 8am – 7pm</strong>
+                                            <span>24/7 Abivlibility</span>
+                                           
                                         </div>
                                     </div>
                                     <div className="footer__contact-item">
-                                        <a href="contacs.html" className="btn btn__block btn__primary">Schedule An Appointment</a>
+                                        <a href="contacs.html" className="btn btn__block btn__primery">Search Best College </a>
                                     </div>
                                 </div>
                                 <div className="footer__copyright text-center">
-                                    <span> &copy; 2020 Modi Group, with Love by
-                                        <a href="sitdown url">sitdown____URL</a>
+                                    <span> @copyrigt; 2020 Abhishek Singh, with Love by-
+                                        <a href="sitdown url">Start-Graduation</a>
                                     </span>
                                 </div>
                             </div>

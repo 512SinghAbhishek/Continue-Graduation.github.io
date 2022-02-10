@@ -39,10 +39,26 @@ section {
   padding-bottom: 100px;
 }
 
+
+.container-lg{
+  max-width: 95%;
+  padding: 30px 10px;
+  margin-left: 80px;
+  /* width: 100%; */
+}
+
 img {
   max-width: 100%;
 }
 
+Form{
+  margin: 0 25px;
+}
+
+
+.col-md-6{
+  padding: 10px 0;
+}
 
 *,
 p,
@@ -1542,18 +1558,19 @@ h6 {
 /*------------------------------*\
     BUTTONS
 \*--------------------------*/
+
 .btn {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   position: relative;
   font-size: 15px;
   font-weight: 700;
-  width: 170px;
-  height: 60px;
-  line-height: 58px;
-  border-radius: 3px;
+  width: 270px;
+  height: 50px;
+  /* line-height: 58px; */
+  border-radius: 50px;
   text-align: center;
   padding: 0;
-  letter-spacing: 0.2px;
+  /* letter-spacing: 0.2px; */
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -4234,7 +4251,7 @@ textarea.form-control {
 }
 
 .slider .slide__title {
-  font-size: 75px;
+  font-size: 50px;
   color: #ffffff;
   margin-bottom: 13px;
 }
@@ -4462,6 +4479,11 @@ textarea.form-control {
 .background-banner {
   min-height: 400px;
 }
+
+#banner1{
+  background-color: #0077b6;
+}
+
 
 .video-banner {
   padding: 225px 0;
@@ -8245,3 +8267,5 @@ tr.secondrow td:nth-child(3) {
 .topheadrow {
   pointer-events: none;
 }
+
+

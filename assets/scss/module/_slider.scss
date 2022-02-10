@@ -1,0 +1,254 @@
+/*------------------------
+    Slider 
+--------------------------*/
+.slider {
+    padding: 0;
+
+    .slide-item {
+        height: 100vh;
+    }
+
+    .slide__subtitle {
+        display: block;
+        font-family: $font-body;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 700;
+        color: $color-theme;
+        margin-bottom: 18px;
+    }
+
+    .slide__title {
+        font-size: 75px;
+        color: $color-white;
+        margin-bottom: 13px;
+    }
+
+    .slide__desc {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $color-white;
+        padding-right: 50px;
+        margin-bottom: 33px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev {
+        left: 10px;
+    }
+
+    .carousel-arrows .owl-nav .owl-next {
+        right: 10px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev,
+    .carousel-arrows .owl-nav .owl-next {
+        color: $color-white;
+        border: none;
+        line-height: 46px;
+        width: auto;
+        opacity: 0;
+        transition: opacity .5s ease, transform .4s ease;
+        transform: scale(0.8);
+    }
+
+    &:hover .carousel-arrows .owl-nav .owl-prev,
+    &:hover .carousel-arrows .owl-nav .owl-next {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .carousel-arrows .owl-dots {
+        bottom: 30px;
+        text-align: center;
+    }
+
+    .carousel-dots .owl-dots .owl-dot span {
+        background-color: $color-white;
+        border-color: #9ea9af;
+    }
+
+    .carousel-dots .owl-dots .owl-dot.active span {
+        background-color: transparent;
+        border-color: $color-theme;
+    }
+}
+
+.slider-2 {
+    .slide__title {
+        font-size: 45px;
+        color: $color-heading;
+        margin-bottom: 22px;
+    }
+
+    .slide__desc {
+        color: $color-body;
+    }
+
+    .slide__box {
+        background-color: #fff;
+        padding: 60px 0 60px 60px;
+        border-radius: 4px;
+        margin-top: -50px;
+    }
+
+    .slide__box-content {
+        flex: 0 0 62.5%;
+        max-width: 62.5%;
+        padding-right: 20px;
+    }
+
+    .slide__box-panel {
+        background-color: #f9fafb;
+        border-left: 2px solid $color-body;
+        padding: 40px 25px;
+        border-radius: 2px 0 0 2px;
+        overflow: hidden;
+        flex: 0 0 37.5%;
+        max-width: 37.5%;
+        text-align: center;
+
+        .slide__box-panel-icon {
+            color: $color-heading;
+            font-size: 60px;
+            line-height: 1;
+            margin-bottom: 9px;
+        }
+    }
+}
+
+/* Large Size Screens */
+@include lg-screens {
+    .slider {
+        .slide__title {
+            font-size: 65px;
+            line-height: 75px;
+        }
+
+        .carousel-arrows .owl-nav .owl-next {
+            right: 10px;
+        }
+
+        .carousel-arrows .owl-nav .owl-prev {
+            left: 10px;
+        }
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .slider {
+        .slide__title {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-arrows .owl-nav .owl-next {
+            right: 0;
+        }
+
+        .carousel-arrows .owl-nav .owl-prev {
+            left: 0;
+        }
+
+    }
+
+    .slider-2 {
+        .slide__box {
+            padding: 30px 0 30px 30px;
+        }
+
+        .slide__title {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+
+    .slider .carousel-arrows .owl-nav .owl-prev,
+    .slider .carousel-arrows .owl-nav .owl-next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .slider .carousel-arrows .owl-nav .owl-next:before,
+    .slider .carousel-arrows .owl-nav .owl-prev:before {
+        font-size: 15px;
+    }
+
+    .slider-2 {
+        .slide__box {
+            flex-direction: column-reverse;
+            padding: 20px 0 20px 20px;
+        }
+
+        .slide__title {
+            font-size: 28px !important;
+            margin-bottom: 10px;
+        }
+
+        .slide__box-content {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .slide__box-panel {
+            flex: 0 0 60%;
+            max-width: 60%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*  Small Screens and tablets  */
+@include sm-screens {
+    .slider {
+        .slide__title {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-arrows .owl-nav .owl-prev {
+            left: -10px;
+        }
+
+        .carousel-arrows .owl-nav .owl-next {
+            right: -10px;
+        }
+    }
+}
+
+/* Extra Small Devices */
+@include xs-screens {
+    .slider {
+        .slide__subtitle {
+            margin-bottom: 15px;
+        }
+
+        .slide__title {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .slide__desc {
+            font-size: 15px;
+            font-weight: 400;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            margin-bottom: 20px;
+        }
+
+        .carousel-arrows .owl-nav .owl-prev,
+        .carousel-arrows .owl-nav .owl-next {
+            display: none;
+        }
+    }
+}

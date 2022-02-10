@@ -1,0 +1,232 @@
+/*-------------------------
+    page title 
+-------------------------*/
+.pagetitle__subheading {
+    font-family: $font-body;
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-gray;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.pagetitle__heading {
+    font-size: 45px;
+    line-height: 1.2;
+    color: $color-white;
+    margin-bottom: 0;
+}
+
+.pagetitle__desc {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $color-gray;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+.page-title {
+    padding-top: 130px;
+    padding-bottom: 30px;
+
+    .breadcrumb {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-item.active {
+        color: $color-gray;
+    }
+
+    .breadcrumb-item a,
+    .breadcrumb-item+.breadcrumb-item::before {
+        color: $color-white;
+    }
+
+    .breadcrumb-item a:hover {
+        color: $color-theme;
+    }
+}
+
+.page-title-layout1 {
+    .pagetitle__heading {
+        font-size: 75px;
+    }
+
+    .breadcrumb {
+        margin-top: 100px;
+    }
+}
+
+.page-title-layout2 {
+    padding-bottom: 135px;
+
+    .btn {
+        margin-top: 31px;
+    }
+}
+
+.page-title-layout3 {
+    padding-top: 185px;
+
+    .breadcrumb {
+        margin-top: 125px;
+    }
+}
+
+.page-title-layout4 {
+    padding-top: 300px;
+    padding-bottom: 58px;
+
+    .breadcrumb {
+        margin-top: 15px;
+    }
+}
+
+.page-title-layout5 {
+    padding-top: 138px;
+    padding-bottom: 218px;
+
+    .pagetitle__subheading {
+        margin-bottom: 16px;
+    }
+}
+
+.page-title-layout6 {
+    padding-top: 197px;
+
+    .breadcrumb {
+        margin-top: 150px;
+    }
+}
+
+.page-title-layout7 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    .pagetitle__heading {
+        font-size: 42px;
+    }
+
+    .btn {
+        margin-top: 32px;
+    }
+}
+
+.page-title-layout8 {
+    padding-top: 178px;
+    padding-bottom: 183px;
+
+    .breadcrumb {
+        margin-top: 15px;
+    }
+}
+
+.page-title-layout9 {
+    padding-top: 170px;
+
+    .pagetitle__desc {
+        margin-top: 18px;
+    }
+
+    .breadcrumb {
+        margin-top: 130px;
+    }
+}
+
+.page-title-layout10 {
+    padding-top: 177px;
+
+    .pagetitle__heading {
+        font-size: 75px;
+    }
+
+    .breadcrumb {
+        margin-top: 134px;
+    }
+}
+
+.page-title-layout11 {
+    padding-top: 136px;
+    padding-bottom: 144px;
+
+    .pagetitle__heading {
+        font-size: 52px;
+    }
+
+    .breadcrumb {
+        margin-top: 25px;
+    }
+}
+
+.page-title-layout12 {
+    padding-top: 136px;
+
+    .pagetitle__heading {
+        font-size: 52px;
+    }
+
+    .pagetitle__desc {
+        margin-top: 18px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .breadcrumb {
+        margin-top: 95px;
+    }
+}
+
+/* Medium Size Devices */
+@include md-screens {
+    .page-title {
+        padding-top: 120px;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .page-title {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .pagetitle__desc {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .pagetitle__heading {
+        font-size: 32px !important;
+    }
+
+    .page-title .breadcrumb {
+        margin-top: 15px;
+
+        .breadcrumb-item {
+            font-size: 13px;
+        }
+    }
+
+    .pagetitle__subheading {
+        font-size: 12px;
+    }
+
+    .page-title-layout5 {
+        padding-bottom: 130px;
+    }
+
+    .page-title-layout12 .pagetitle__desc {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-screens {
+    .pagetitle__heading {
+        font-size: 28px !important;
+    }
+}

@@ -1,0 +1,188 @@
+/*----------------------------
+     Testimonial
+------------------------------*/
+.testimonials {
+    position: relative;
+
+    .testimonials__heading {
+        font-family: $font-body;
+        font-size: 15px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev,
+    .carousel-arrows .owl-nav .owl-next {
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        border-radius: 2px;
+        border: 2px solid $color-white;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-heading;
+            border-color: $color-heading;
+        }
+    }
+
+    .carousel-arrows .owl-nav .owl-next:before {
+        content: "\e902";
+        font-size: 12px;
+    }
+
+    .carousel-arrows .owl-nav .owl-prev {
+        left: auto;
+        right: 40px;
+
+        &:before {
+            content: "\e900";
+            font-size: 12px;
+        }
+    }
+}
+
+.testimonial-item {
+    position: relative;
+
+    .testimonial__desc {
+        font-family: $font-heading;
+        color: $color-heading;
+        font-size: 32px;
+        line-height: 47px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+}
+
+.testimonial__meta {
+    padding-left: 40px;
+    border-left: 2px solid $color-white;
+
+    .testimonial__thumb {
+        position: relative;
+        width: 60px;
+        margin-bottom: 27px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -40px;
+            width: 30px;
+            height: 22px;
+            display: block;
+            background-image: url(../images/testimonials/quote-icon.png);
+        }
+
+        img {
+            border-radius: 2px;
+        }
+    }
+
+    .testimonial__meta-title {
+        font-family: $font-heading;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .testimonial__meta-desc {
+        font-family: $font-body;
+        line-height: 1;
+        font-weight: 400;
+        font-size: 13px;
+        color: #616161;
+        margin-bottom: 0;
+    }
+}
+
+.testimonials-white {
+
+    .testimonial-item .testimonial__desc,
+    .testimonial__meta .testimonial__meta-title {
+        color: $color-white;
+    }
+
+    .testimonial__meta .testimonial__meta-desc {
+        color: $color-gray;
+    }
+}
+
+.testimonials-layout2 {
+    .testimonials-panel-wrap {
+        padding: 80px 50px;
+    }
+
+    .testimonial-item {
+        padding-left: 190px;
+
+        .testimonial__meta {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .carousel-arrows .owl-nav .owl-prev {
+        left: 190px;
+        right: auto;
+    }
+
+    .carousel-arrows .owl-nav .owl-next {
+        left: 230px;
+        right: auto;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .testimonial-item .testimonial__desc {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .testimonial-item .testimonial__desc {
+        font-size: 20px !important;
+        line-height: 25px !important;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .testimonials-layout2 {
+        .testimonials-panel-wrap {
+            padding: 30px 20px;
+        }
+
+        .testimonial-item {
+            padding-left: 0;
+            padding-bottom: 30px;
+
+            .testimonial__meta {
+                position: static;
+                border-left: none;
+                padding-left: 0;
+                margin-bottom: 30px;
+
+                .testimonial__thumb {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .carousel-arrows .owl-nav .owl-prev {
+            left: 0;
+        }
+
+        .carousel-arrows .owl-nav .owl-next {
+            left: 40px;
+        }
+    }
+}

@@ -1,0 +1,123 @@
+/*-----------------------
+    Features
+------------------------*/
+.feature-item {
+    position: relative;
+    margin-bottom: 30px;
+
+    .feature__img {
+        margin-bottom: 24px;
+
+        img {
+            border-radius: 3px;
+            @include prefix(transition, transform .3s ease, webkit moz ms o);
+        }
+    }
+
+    .feature__subtitle {
+        font-family: $font-body;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    .feature__title {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @include prefix(transition, color .3s ease, webkit moz ms o);
+    }
+
+    .feature__desc {
+        margin-bottom: 0;
+    }
+
+    .feature__link {
+        display: block;
+        margin-top: 5px;
+    }
+
+    &:hover {
+        .feature__img img {
+            @include prefix(transform, translateY(-4px), webkit moz ms o);
+        }
+
+        .feature__title {
+            color: $color-theme;
+        }
+    }
+}
+
+.feature-list-item {
+    padding: 27px 15px 22px 25px;
+    border: 1px solid #e7ebef;
+    background-color: $color-white;
+    border-radius: 2px;
+    box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.08);
+    @include prefix(transition, all .3s linear, webkit moz ms o);
+
+    &:hover {
+        border-color: $color-white;
+        box-shadow: 0px 1px 73px 0px rgba(40, 40, 40, 0.15);
+    }
+
+    .feature__content {
+        position: relative;
+        padding-left: 32px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: 'Fontawesome';
+            content: "\f00c";
+            color: $color-theme;
+            font-size: 18px;
+        }
+    }
+
+    .feature__title {
+        font-family: $font-body;
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .feature__desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+/* Medium Size Screens */
+@include md-screens {
+    .feature-item {
+
+        .feature__img {
+            margin-bottom: 20px;
+        }
+
+        .feature__title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .feature-item {
+        .feature__img {
+            margin-bottom: 15px;
+        }
+
+        .feature__title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .awards .feature-item {
+        text-align: center;
+    }
+}

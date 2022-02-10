@@ -1,0 +1,45 @@
+/*------------------- 
+    Icons
+------------------*/
+
+.social__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+        margin-right: 20px;
+
+        a {
+            display: block;
+            line-height: 1;
+            color: $color-heading;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.arrow-rounded {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    background-color: $color-theme;
+    color: $color-white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    display: inline-block;
+    @include prefix(transition, all 0.6s ease, webkit moz ms o);
+}
+
+.arrow-rounded-white {
+    background-color: $color-white;
+    color: $color-theme;
+}
