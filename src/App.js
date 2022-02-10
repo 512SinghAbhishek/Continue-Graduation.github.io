@@ -17,7 +17,7 @@ import About from './Component/About';
 import Login from './Component/Login';
 import Quary from './Component/Quary';
 
-
+console.log('')
 
 function App() {
   return (
