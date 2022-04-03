@@ -1577,6 +1577,9 @@ h6 {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.abhi-edit{
+  padding-top:11px;
+}
 
 .btn:focus,
 .btn.active,
@@ -8283,4 +8286,12 @@ tr.secondrow td:nth-child(3) {
   pointer-events: none;
 }
 
+.tl-item1{
+  background: url("https://cdn1.aglasem.com/admission/wp-content/uploads/2017/04/IIT-Kharagpur-Admissions-min-750x375.png") ;
+  background-repeat: no-repeat;
+}
+.tl-item{
+  background: url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") ;
+  background-repeat: no-repeat;
+}
 

@@ -121,8 +121,8 @@ function Footer() {
                                     </div>
                                 </div>
                                 <div className="footer__copyright text-center">
-                                    <span> @copyrigt; 2020 Abhishek Singh, with Love by-
-                                        <a href="sitdown url">Start-Graduation</a>
+                                    <span> @copyrigt; 2022 Developed by- Abhishek Singh, with  
+                                        <a href="sitdown url"> Start-Graduation</a>
                                     </span>
                                 </div>
                             </div>

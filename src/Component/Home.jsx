@@ -112,7 +112,7 @@ function Home() {
                                         <h2 className="slide__title">
                                             Best Undergraduation University,College& Courses</h2>
                                         <p className="slide__desc">To develope Your Skill for Graduate best College in India </p>
-                                        <a href="about-us.html" className="btn btn__primary btn__hover2 mr-30 mb-4">More About Us</a>
+                                        <a href="about-us.html" className="btn btn__primary btn__hover2 mr-30 mb-4 abhi-edit">More About Us</a>
                                         {/* <!-- <a href="#" className="btn btn__white">Our Services</a> --> */}
                                     </div>
                                 </div>
@@ -439,7 +439,7 @@ function Home() {
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="contacs.html" className="btn btn__white btn__bordered btn__lg">Inquire</a>
+                                    <a href="contacs.html" className="btn btn__white btn__bordered btn__lg abhi-edit">Inquire</a>
                                 </div>
                             </div>
                         </div>
