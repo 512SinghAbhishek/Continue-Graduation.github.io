@@ -3,6 +3,7 @@ import "./Style.css";
 import "./Home.css";
 // import logo from './logo/abhishek.jpg';
 import logo from './logo/grad.jpg';
+import { NavLink } from 'react-router-dom';
 
 const img={
     hight: '80px',
@@ -116,7 +117,7 @@ function Footer() {
                                         </div>
                                     </div>
                                     <div className="footer__contact-item">
-                                        <a href="contacs.html" className="btn btn__block btn__primery">Search Best College </a>
+                                        <NavLink to="/Home" className="btn btn__block btn__primery">Search Best College </NavLink>
                                     </div>
                                 </div>
                                 <div className="footer__copyright text-center">

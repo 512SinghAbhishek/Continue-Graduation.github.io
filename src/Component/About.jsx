@@ -2,8 +2,38 @@ import react from "react";
 import "./Style.css";
 import "./Home.css";
 import logo from './logo/abhishek.jpg';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Navbar from './Navbar';
 import Footer from "./Footer";
+
+
+const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    autoplay: false,
+    // navText: ["Prev", "Next"],
+    smartSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 5,
+        }
+    },
+};
 
 
 const map={
@@ -23,8 +53,8 @@ function About() {
     <>
 <Navbar/>
 
-      <section id="pageTitle" className="page-title text-center bg-overlay bg-overlay-3 bg-parallax">
-            <div className="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"/></div>
+      <section id="page-title" className="page-title text-center bg-overlay bg-overlay-3 bg-parallax">
+            <div className="bg-img"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -251,74 +281,101 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-12" >
-                        <div className="carousel owl-carousel carousel-arrows" data-slide="3" data-slide-md="2"
-                            data-slide-sm="1" data-autoplay="true" data-nav="true" data-dots="false" data-space="30"
-                            data-loop="true" data-speed="800" style={img1}>
-                            <div className="portfolio-item">
-                                <div className="portfolio__img">
-                                    <img src={logo} alt="portfolio img"/>
-                                    <a href="#" className="view__icon">View</a>
-                                </div>
-                                <div className="portfolio__content">
-                                    <h4 className="portfolio__title"><a href="#">Floride Chemicals Factory</a></h4>
-                                    <div className="portfolio__cat">
-                                        <a href="#">Chemicals</a><a href="#">oil & Gas</a>
+                <OwlCarousel className="slider-items owl-carousel" {...options}>
+                            <div className="row">
+                                <div className="col-sm-12 col-md-12 col-lg-12" style={img1}>
+                                    <div className="carousel owl-carousel carousel-arrows" data-slide="3" data-slide-md="2" data-slide-sm="1"
+                                        data-autoplay="false" data-nav="false" data-dots="false" data-space="30" data-loop="false"
+                                        data-speed="800">
+                                    </div>
+
+                                    {/* <div class="mobiscroll"> */}
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Mumbai Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">December 11, 2018</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Russia Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">September 29, 2018</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Turkey Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">December 24, 2018</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Turkey Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">December 24, 2018</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Russia Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">September 29, 2018</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="portfolio-item">
+                                        <div className="portfolio__img">
+                                            <img src={logo} alt="portfolio img" />
+                                            <a href="news.html" className="view__icon">View</a>
+                                        </div>
+
+                                        <div className="portfolio__content">
+                                            <h4 className="portfolio__title"><a href="#">
+                                                Turkey Exhibition</a></h4>
+                                            <div className="portfolio__cat">
+                                                <a href="#">December 24, 2018</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio__img">
-                                    <img src={logo} alt="portfolio img"/>
-                                    <a href="#" className="view__icon">View</a>
-                                </div>
-                                <div className="portfolio__content">
-                                    <h4 className="portfolio__title"><a href="#">Highway Energy Station</a></h4>
-                                    <div className="portfolio__cat">
-                                        <a href="#">Construction </a><a href="#">Energy</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio__img">
-                                    <img src={logo} alt="portfolio img"/>
-                                    <a href="#" className="view__icon">View</a>
-                                </div>
-                                <div className="portfolio__content">
-                                    <h4 className="portfolio__title"><a href="#">Villy Manufacturing Inc</a></h4>
-                                    <div className="portfolio__cat">
-                                        <a href="#">Engineering</a><a href="#">Auto</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio__img">
-                                    <img src={logo} alt="portfolio img"/>
-                                    <a href="#" className="view__icon">View</a>
-                                </div>
-                                <div className="portfolio__content">
-                                    <h4 className="portfolio__title"><a href="#">Regulatory Compliance Seminar</a></h4>
-                                    <div className="portfolio__cat">
-                                        <a href="#">Construction</a><a href="#">Engineering</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="portfolio-item">
-                                <div className="portfolio__img">
-                                    <img src={logo} alt="portfolio img"/>
-                                    <a href="#" className="view__icon">View</a>
-                                </div>
-                                <div className="portfolio__content">
-                                    <h4 className="portfolio__title"><a href="#">Documents & Electronic Data</a></h4>
-                                    <div className="portfolio__cat">
-                                        <a href="#">Engineering</a><a href="#">oil & Gas</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </OwlCarousel>
             </div>
         </section>
 

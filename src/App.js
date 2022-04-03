@@ -16,62 +16,62 @@ import Home from './Component/Home';
 import About from './Component/About';
 import Login from './Component/Login';
 import Quary from './Component/Quary';
+import SignUp from './Component/Signup';
+// import Navbar from './Component/Navbar';
 
-console.log('')
+
+
 
 function App() {
   return (
     <>
-  
-    {/* <Navbar/> */}
-    {/* <About/> */}
-       <Router>
+      {/* <SignUp/> */}
+      {/* <Navbar/>
+    <About/> */}
+      <Router>
         <Switch>
-           {/* <Route path="/About">
-           <About/>
-            </Route>  */}
-            <Route path="/Quary">
-            <Quary/>
-            </Route>
-             <Route path="/Login">
-            <Login/>
-            </Route> 
-            <Route path="/BHMS">
-            <BHMS/>
-            </Route>
-            <Route path="/BAMS">
-            <BAMS/>
-            </Route>
-            <Route path="/BDS">
-            <BDS/>
-            </Route>
-            <Route path="/MBBS">
-            <MBBS/>
-            </Route>
-            <Route path="/ITI">
-            <ITI/>
-            </Route>
-            <Route path="/Btech">
-            <Btech/>
-            </Route>
-            <Route path="/BCA">
-            <BCA/>
-            </Route>
-            <Route path="/Politechnic">
-            <Politechnic/>
-            </Route>
-           <Route path="/Btech">
-            <Btech/>
-            </Route>
-           <Route path="/About">
+          <Route path="/Quary">
+            <Quary />
+          </Route>
+          <Route path="/Login">
+            <Login />
+          </Route>
+          <Route path="/BHMS">
+            <BHMS />
+          </Route>
+          <Route path="/BAMS">
+            <BAMS />
+          </Route>
+          <Route path="/BDS">
+            <BDS />
+          </Route>
+          <Route path="/MBBS">
+            <MBBS />
+          </Route>
+          <Route path="/ITI">
+            <ITI />
+          </Route>
+          <Route path="/Btech">
+            <Btech />
+          </Route>
+          <Route path="/BCA">
+            <BCA />
+          </Route>
+          <Route path="/Politechnic">
+            <Politechnic />
+          </Route>
+          <Route path="/Btech">
+            <Btech />
+          </Route>
+          <Route path="/About">
             <About />
           </Route>
           <Route path="/">
             <Home />
           </Route>
         </Switch>
-      </Router> 
-     
+      </Router>
+
     </>
   );
 }

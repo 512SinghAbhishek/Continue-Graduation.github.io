@@ -1,10 +1,60 @@
 import react from "react";
+import { useState } from "react";
+import { useHistory } from 'react-router-dom';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import "./Style.css";
 import "./Home.css";
 import logo from './logo/abhishek.jpg';
+import "./SignUp.css";
+import Login from './Login';
 import Navbar from './Navbar';
 import Footer from "./Footer";
-// import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+// import Content from './ReadMore';
+
+
+const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    autoplay: false,
+    navText: ["Prev", "Next"],
+    smartSpeed: 1000,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 5,
+        }
+    },
+};
+
+
+const bg = {
+    textAlign: 'center',
+    fontWeight: '900',
+    margin: '31px 0',
+    backgroundColor: 'aquamarine',
+    borderRadius: '7px',
+    margin: '15px 36px',
+    padding: '3px',
+}
+
+const container = {
+    backgroundColor: "white",
+}
 
 
 const tl = {
@@ -17,20 +67,20 @@ const banner1 = {
 
 
 const heading = {
-    marginTop: '140px'
+    marginTop: '50px'
 }
 
 
 const img = {
     height: '280px',
-    width:'350px'
+    width: '350px'
 }
 
 const img1 = {
     // height: '300px',
     // width: '300px',
     display: 'inline-flex'
-    
+
 }
 
 const sec = {
@@ -38,11 +88,13 @@ const sec = {
 }
 
 
-
 function Home() {
     return (
         <>
-        <Navbar/>
+            <Navbar />
+          
+
+
             <section style={sec} id="slider1" className="slider slider-1">
                 <section style={sec} id="timeline">
 
@@ -79,7 +131,7 @@ function Home() {
 
                         <div className="tl-year">
                             <a href="WeldingConsumables.html">
-                                <p className=" heading--sanSerif text-white ">Engineering</p>
+                                <p className=" heading--sanSerif text-white "> Best Engineering </p>
                             </a>
                         </div>
 
@@ -203,7 +255,7 @@ function Home() {
                                             and
                                             brands that Europe
                                             and America had to offer.</p>
-                                        <p>Being a determined business leader that he is, Mr. Umesh Kumar Modi is also a man of
+                                        {/* <p>Being a determined business leader that he is, Mr. Umesh Kumar Modi is also a man of
                                             high
                                             values. It was his strong attachment to his roots & the vision of his father Lt. Sh.
                                             Rai
@@ -222,8 +274,9 @@ function Home() {
                                             Mr.Umesh Kumar Modi’s impeccable leadership. This group is a living chronicle of
                                             what
                                             true dedication, strategy and a vision for the future can lead to.
-                                        </p>
-                                        <a href="about-us.html"><h6 className="mr-3" >View About Us</h6></a>
+                                        </p> */}
+                                        {/* <Content /> */}
+                                        {/* <Link href={}><h6 className="mr-3">View About Us</h6></Link> */}
                                     </span>
                                 </div>
 
@@ -246,11 +299,13 @@ function Home() {
   </script> */}
 
                                 <div className="about__signature mb-30">
-                                    <button className="btn btn__primary btn__bordered mr-40" onclick="myFunction()" id="myBtn">Read
-                                        more About Us</button>
-                                    {/* <!-- <button  className="btn btn__primary btn__bordered mr-40" onclick="myFunction()">MOre About Us</button> -->
-<!-- <button onclick="myFunction()"><a href="#" className="btn btn__primary btn__bordered mr-40">More About Us</a></button> -->
-<!-- <a href="#" className="btn btn__primary btn__bordered mr-40">More About Us</a> --> */}
+                                    {/* <SignUp /> */}
+                                    {/* <button className="btn btn__primary btn__bordered mr-40" onclick={Registr} id="myBtn">Read
+                                        more About Us</button> */}
+                                    <NavLink to="/Login" className="nav__item-link">Read More</NavLink>
+
+                                    {/* <!-- <button onclick="myFunction()"><a href="#" className="btn btn__primary btn__bordered mr-40">More About Us</a></button>
+<!-- <a href="#" className="btn btn__primary btn__bordered mr-40">More About Us</a> */}
                                     <img src="assets/images/about/singnture.png" alt="singnture" className="signature" />
                                 </div>
                             </div>
@@ -511,6 +566,98 @@ function Home() {
                     </div>
 
 
+
+                    <OwlCarousel className="slider-items owl-carousel" {...options}>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        {/* <div class="caption ">
+                            <a href="product-details.php" class="h6 font-weight-normal">cidacos chikpeas extra
+                                <span class="small d-block">570 gr</span>
+                            </a>
+
+                            <p class="text-light-blue h5  text-capitalize">$ 2.0 / kg</p>
+
+                        </div>
+                        <div class="btn-box ">
+                            <button class="btn btn-info round-xl round btn-lg item-btn-cart btn-block"> <i class="ti-plus"></i> add to cart</button>
+
+                            <div class="cart-inc-dec btn btn-info round-xl round btn-lg btn-block" >
+                                <button type="button" onclick="decrementValue()" ><i class="ti-minus"></i></button>
+                                <input type="text" name="quantity" value="1" maxlength="2" max="10" size="1" id="number" />
+                                <button type="button" onclick="incrementValue()" ><i class="ti-plus"></i></button>
+                            </div>
+
+                        </div> */}
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="box">
+                        <figure class="img-holder">
+                        <div class="item"><img src={logo} style={img} alt="Owl Image" /></div>
+                        </figure>
+
+                        
+                    </div>
+                </div>
+            </OwlCarousel>
+
+                    {/* 
                     <div className="row mt-50">
 
                         <div className="col-sm-12 col-md-6 col-lg-4">
@@ -569,13 +716,13 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                
+
             </section>
 
 
-            
+
 
             <section id="videoBanner" className="" style={sec}>
 
@@ -605,6 +752,7 @@ function Home() {
 
                                 </div>
                             </div>
+                            <OwlCarousel className="slider-items owl-carousel" {...options}>
                             <div className="row">
                                 <div className="col-sm-12 col-md-12 col-lg-12" style={img1}>
                                     <div className="carousel owl-carousel carousel-arrows" data-slide="3" data-slide-md="2" data-slide-sm="1"
@@ -615,7 +763,7 @@ function Home() {
                                     {/* <div class="mobiscroll"> */}
                                     <div className="portfolio-item">
                                         <div className="portfolio__img">
-                                            <img src={logo}  alt="portfolio img" />
+                                            <img src={logo} alt="portfolio img" />
                                             <a href="news.html" className="view__icon">View</a>
                                         </div>
                                         <div className="portfolio__content">
@@ -628,7 +776,7 @@ function Home() {
                                     </div>
                                     <div className="portfolio-item">
                                         <div className="portfolio__img">
-                                            <img src={logo}  alt="portfolio img" />
+                                            <img src={logo} alt="portfolio img" />
                                             <a href="news.html" className="view__icon">View</a>
                                         </div>
                                         <div className="portfolio__content">
@@ -642,7 +790,7 @@ function Home() {
 
                                     <div className="portfolio-item">
                                         <div className="portfolio__img">
-                                            <img src={logo}  alt="portfolio img" />
+                                            <img src={logo} alt="portfolio img" />
                                             <a href="news.html" className="view__icon">View</a>
                                         </div>
 
@@ -656,7 +804,7 @@ function Home() {
                                     </div>
                                     <div className="portfolio-item">
                                         <div className="portfolio__img">
-                                            <img src={logo}alt="portfolio img" />
+                                            <img src={logo} alt="portfolio img" />
                                             <a href="news.html" className="view__icon">View</a>
                                         </div>
                                         <div className="portfolio__content">
@@ -667,12 +815,13 @@ function Home() {
                                             </div>
                                         </div>
                                     </div>
-                                    </div>
-
                                 </div>
+
                             </div>
+                        </OwlCarousel>
                         </div>
                     </div>
+                </div>
                 {/* </div> */}
             </section>
 
@@ -777,12 +926,107 @@ function Home() {
                 </div>
             </section>
 
-<Footer/>
-
-
-
+            <Footer />
         </>
     );
+}
+
+
+
+
+function Registr() {
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const history = useHistory();
+
+    async function Registration() {
+        let item = { name, password, email }
+        let result = await fetch("http://localhost:3000/api/register%20", {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(item)
+        })
+        result = await result.json();
+        console.log("result", result);
+        localStorage.setItem("user-info", JSON.stringify(result));
+        history.push("/About")
+
+    }
+
+    return (
+        <>
+            {/* <!-- Modal --> */}
+            <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog form-dark" role="document">
+                    {/* <!--Content--> */}
+                    <div class="modal-content card card-image">
+                        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+                            {/* <!--Header--> */}
+                            <div class="modal-header text-center pb-4">
+                                <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>SIGN</strong> <a
+                                    class="green-text font-weight-bold"><strong> UP</strong></a></h3>
+                                <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            {/* <!--Body--> */}
+                            <div class="modal-body">
+                                {/* <!--Body--> */}
+                                <form>
+                                    {/* <a href={logo} className="img">
+  <img src={logo} alt="" width="200" height="55" /></a> */}
+
+                                    {/* <h2 className="h2" style={bg}>Login</h2> */}
+                                    {/* <h4 className="help"> Help</h4> */}
+                                    {/* <h6 className="h6">create your profile an Qouse as a volenteer & connect with chalengmakers around the world!</h6>
+<h1 className="h1">login/SignUp Details</h1>
+<h6 className="hh6">Please Enter valid Email address</h6> */}
+                                    <div class="mb-3">
+                                        <label for="exampleInputName" class="form-label" >Name</label>
+                                        <input type="text" value={name} onChange={(e) => setName(e.target.value)} class="form-control" id="exampleInput" required />
+                                        <br />
+                                        <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control" id="exampleInputPassword1" required />
+                                    </div>
+                                    {/* <div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div> */}
+                                    {/* <button type="submit" class="btn btn-primary">Submit</button> */}
+                                    <button className="btn btn-warning p-3  mb-2 "> <NavLink onClick={Login} className="nav__item-link"></NavLink>SignUp</button>
+                                    <br />
+                                    {/* <button className="btn btn-warning p-3 " onclick="document.getElementById('id01').style.display='block'">Use Phone number for login</button> */}
+
+                                </form>
+                                {/* <!--Grid column--> */}
+
+                            </div>
+                            {/* <!--Grid row--> */}
+
+                        </div>
+                    </div>
+                </div>
+                {/* <!--/.Content--> */}
+            </div>
+
+            {/* <!-- Modal --> */}
+
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#darkModalForm"> Read More About Us</a>
+            </div>
+        </>
+    );
+
 }
 
 export default Home;

@@ -14,10 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection {
-  /* background-color: #1275ba; */
+/* ::selection {
+  background-color: #1275ba;
   color: #ffffff;
-}
+} */
 
 a {
   color: #1275ba;
@@ -36,7 +36,7 @@ a:hover {
 section {
   position: relative;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 15px;
 }
 
 
@@ -240,7 +240,7 @@ select {
 }
 
 .mt-120 {
-  margin-top: 120px !important;
+  margin-top: 35px !important;
 }
 
 .mb-0 {
@@ -390,7 +390,7 @@ select {
 }
 
 .pt-120 {
-  padding-top: 120px !important;
+  padding-top: 0px !important;
 }
 
 .pt-130 {
@@ -423,7 +423,7 @@ select {
 }
 
 .pb-40 {
-  padding-bottom: 40px !important;
+  padding-bottom: 0px !important;
 }
 
 .pb-50 {
@@ -7162,7 +7162,7 @@ tr{
   
   background-repeat: no-repeat;
   background-position: left top;
-  padding-top:95px;
+  padding-top:50px;
   margin-bottom:60px;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
@@ -7476,6 +7476,18 @@ article {
     width: 100%;
     text-align: center;
   }
+
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
   .timeline-centered .timeline-item.period {
     padding: 50px 0 90px;
   }
@@ -7810,6 +7822,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', end
     top: 0px;
 }
 
+#page-title{
+  background: url(https://source.unsplash.com/1730x600/?Graduate,Collaege) no-repeat;
+}
 
 .box-style1:after{
 	content:'';
